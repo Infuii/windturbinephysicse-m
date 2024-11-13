@@ -1,4 +1,3 @@
-import React from "react";
 import { Zap, Settings, Wrench, Wind } from "lucide-react";
 
 function TechnicalDetails() {

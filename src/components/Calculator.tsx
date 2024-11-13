@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from "react";
 
 function Calculator() {
   const [windSpeed, setWindSpeed] = useState(5.7);
@@ -14,7 +14,7 @@ function Calculator() {
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
       <h2 className="text-xl font-semibold mb-6">Wind Power Calculator</h2>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="space-y-2">
           <label className="block text-sm font-medium text-gray-700">
@@ -62,20 +62,19 @@ function Calculator() {
       <div className="mt-8 p-4 bg-blue-50 rounded-lg">
         <div className="text-center">
           <div className="text-sm text-gray-600">Theoretical Power Output</div>
-          <div className="text-3xl font-bold text-blue-600">{calculatePower()} W</div>
+          <div className="text-3xl font-bold text-blue-600">
+            {calculatePower()} W
+          </div>
         </div>
       </div>
 
       <div className="mt-6 text-sm text-gray-500">
         <p>
-          The theoretical power output is calculated using the formula:
-          P = ½ρAv³
+          The theoretical power output is calculated using the formula: P =
+          ½ρAv³
         </p>
         <p className="mt-2">
-          Where:
-          ρ (rho) = air density
-          A = swept area (πr²)
-          v = wind speed
+          Where: ρ (rho) = air density A = swept area (πr²) v = wind speed
         </p>
       </div>
     </div>

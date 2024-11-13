@@ -1,4 +1,3 @@
-import React from "react";
 import { MapPin, Users, Wind, Home, Book } from "lucide-react";
 
 function InfoPanel() {
